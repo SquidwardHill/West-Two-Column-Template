@@ -1,0 +1,265 @@
+/*!
+  * Bootstrap AMP project minimal
+  *
+  * Copyright 2011-2017 The Bootstrap Authors
+  * Copyright 2011-2017 Twitter, Inc.
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+@media (min-width:576px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+@media (min-width:576px) {
+    .container {
+        width: 540px;
+        max-width: 100%
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 720px;
+        max-width: 100%
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+@media (min-width:576px) {
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+@media (min-width:768px) {
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+@media (min-width:576px) {
+    .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+}
+
+@media (min-width:768px) {
+    .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0
+}
+
+.no-gutters>.col,
+.no-gutters>[class*=col-] {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.col,
+.col-1,
+.col-auto,
+.col-md,
+.col-md-1,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+@media (min-width:576px) {
+    .col,
+    .col-1,
+    .col-auto,
+    .col-md,
+    .col-md-1,
+    .col-md-auto,
+    .col-sm,
+    .col-sm-1,
+    .col-sm-auto {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+@media (min-width:768px) {
+    .col,
+    .col-1,
+    .col-auto,
+    .col-md,
+    .col-md-1,
+    .col-md-auto,
+    .col-sm,
+    .col-sm-1,
+    .col-sm-auto {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+.col {
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%
+}
+
+.col-auto {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto
+}
+
+.col-1 {
+    width: 100%
+}
+
+.pull-0 {
+    right: auto
+}
+
+.pull-1 {
+    right: 100%
+}
+
+.push-0 {
+    left: auto
+}
+
+.push-1 {
+    left: 100%
+}
+
+@media (min-width:576px) {
+    .col-sm {
+        -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%
+    }
+    .col-sm-auto {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto
+    }
+    .col-sm-1 {
+        width: 100%
+    }
+    .pull-sm-0 {
+        right: auto
+    }
+    .pull-sm-1 {
+        right: 100%
+    }
+    .push-sm-0 {
+        left: auto
+    }
+    .push-sm-1 {
+        left: 100%
+    }
+    .offset-sm-0 {
+        margin-left: 0
+    }
+}
+
+@media (min-width:768px) {
+    .col-md {
+        -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%
+    }
+    .col-md-auto {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto
+    }
+    .col-md-1 {
+        width: 100%
+    }
+    .pull-md-0 {
+        right: auto
+    }
+    .pull-md-1 {
+        right: 100%
+    }
+    .push-md-0 {
+        left: auto
+    }
+    .push-md-1 {
+        left: 100%
+    }
+    .offset-md-0 {
+        margin-left: 0
+    }
+}
+
+
+/*# sourceMappingURL=bootstrap-amp.min.css.map */
