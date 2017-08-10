@@ -37,7 +37,8 @@
             <div class="wrapper">
                 <div class="row">
                     <div class="col-md-2">
-                        <div class="logo"> <img src="/img/west-white-logo.png"> </div>
+                        <div class="logo">
+                        <amp-img src="@Url.Content("~/Content/Site/{Model.Domain}/Images/logo.png")" alt="logo" height="43" width="148"></amp-img></div>
                     </div>
                     <div class="col-md-10 right-desktop">
                         <div class="call-apply-btns"> 
@@ -115,15 +116,10 @@
                     <div class="row">
                         <div class="col-md-5 col-md-offset-1"> 
                             <ul>
-                                @foreach(var qualification in Model.'Benefits')
-									{
-										<li>@benefit</li>
-										<li>@benefit</li>
-										<li>@benefit</li>
-                                        <li>@benefit</li>
-                                        <li>@benefit</li>
-
-									}
+                                 @foreach(var benefit in Model.Benefits.Where((b, i) => i % 2 == 0))
+                                {
+                                    <li>@benefit</li>
+                                }
                             <!--<li>GREAT PAY</li>
                             <li>HOME EVERY WEEK</li>
                             <li>NEWEST TRUCKS: Avg. 1 ½ years old</li>
@@ -134,15 +130,10 @@
                         </div>
                         <div class="col-md-5 col-md-offset-1"> 
                             <ul>
-                                @foreach(var qualification in Model.'Benefits')
-									{
-										<li>@benefit</li>
-										<li>@benefit</li>
-										<li>@benefit</li>
-                                        <li>@benefit</li>
-                                        <li>@benefit</li>
-
-									}
+                                @foreach(var benefit in Model.Benefits.Where((b, i) => i % 2 == 0))
+                                {
+                                    <li>@benefit</li>
+                                }
                             <!--<li>LOTS OF MILES</li>
                             <li>PAID VACATION</li>
                             <li>EXCELLENT BENEFITS: Health, dental, and vision starting as soon as 30 days.</li>
@@ -214,13 +205,10 @@
                            <div class="aside inner">
                                 <h3 class="center">Qualifications</h3>
                                 <ul>
-                                    @foreach(var qualification in Model.'Qualifications')
-									{
-										<li>@qualification</li>
-										<li>@qualification</li>
-										<li>@qualification</li>
-
-									}
+                                   @foreach(var qualification in Model.Qualifications)
+                                    {
+                                        <li>@qualification</li>
+                                    }
                                     <!--<li>Don't Wait - you can be Pre-Qualified in less than 2 minutes!</li>
                                     <li>Must be 21 years of age or older with CDL A and 3 months of current OTR experience</li>
                                     <li>Also accepting CDL A Recent Grads/Students 21 years and older</li>-->
